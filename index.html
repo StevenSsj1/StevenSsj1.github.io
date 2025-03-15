@@ -5,39 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lenin Steven Llano Orellana - CV</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; }
-        .container { max-width: 800px; margin: auto; }
-        h1, h2, h3 { color: #333; }
-        .section { margin-bottom: 20px; }
-        .contact a { text-decoration: none; color: #0073e6; }
-        ul { padding-left: 20px; }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+        }
+        .contact p {
+            margin: 5px 0;
+        }
+        .contact a {
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .highlight {
+            background: #e6f2ff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .experience, .education, .skills {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Lenin Steven Llano Orellana</h1>
-        <h3>Ingeniero en Ciencias de la Computación</h3>
+        <div class="header">
+            <h1>Lenin Steven Llano Orellana</h1>
+            <h3>Ingeniero en Ciencias de la Computación</h3>
+        </div>
         <div class="contact">
-            <p>📞 0963552952 | ✉️ <a href="mailto:leninllano22@outlook.com">leninllano22@outlook.com</a></p>
+            <p> ✉️ <a href="mailto:leninllano22@outlook.com">leninllano4@gmail.com</a></p>
             <p>🔗 <a href="https://www.linkedin.com/in/lenin-llano-orellana-92274bb6/" target="_blank">LinkedIn</a></p>
             <p>📍 Quito, Ecuador</p>
         </div>
 
         <div class="section">
             <h2>Perfil Profesional</h2>
-            <p>Estudiante del último semestre en Ciencias de la Computación con experiencia en configuración de requerimientos funcionales, automatización de flujos de trabajo y gestión de arquitecturas como microservicios. Con conocimientos en Python, Java, JavaScript y R, además de frameworks como NestJS, Angular y FastAPI. Experiencia en bases de datos relacionales y no relacionales, contenedorización y CI/CD.</p>
+            <p class="highlight">Estudiante del último semestre en Ciencias de la Computación con experiencia en configuración de requerimientos funcionales, automatización de flujos de trabajo y gestión de arquitecturas como microservicios. Con conocimientos en Python, Java, JavaScript y R, además de frameworks como NestJS, Angular y FastAPI. Experiencia en bases de datos relacionales y no relacionales, contenedorización y CI/CD.</p>
         </div>
 
-        <div class="section">
+        <div class="section experience">
             <h2>Experiencia</h2>
             <h3>KimsaSoft S.A.S - DevOps/Backend Pasante (02/2024 - 08/2024)</h3>
-            <p><strong>KimsaSoft</strong> es una empresa de desarrollo de software especializada en aplicaciones web y móviles, con un enfoque en soluciones personalizadas e innovadoras. Su nombre, inspirado en la palabra kichwa "kimsa" (tres), refleja su compromiso con el trabajo en equipo.</p>
+            <p><strong>KimsaSoft</strong> es una empresa de desarrollo de software especializada en aplicaciones web y móviles.</p>
+            <h4>Actividades</h4>
             <ul>
-                <li>Configuración e implementación de un servidor GitLab open source para reemplazar la solución de pago.</li>
+                <li>Configuración e implementación de un servidor GitLab open source.</li>
                 <li>Automatización de backups y subida a Storj con Bash.</li>
                 <li>Orquestación de contenedores con Docker y Docker Compose.</li>
                 <li>Automatización de pipelines CI/CD con GitLab CI/CD.</li>
-                <li>Desarrollo de un servicio de autenticación con NestJS, JWT, bcrypt, TypeORM y PostgreSQL.</li>
+                <li>Desarrollo de un servicio de autenticación con NestJS, JWT y PostgreSQL.</li>
             </ul>
             <h4>Logros</h4>
             <ul>
@@ -49,9 +93,10 @@
 
             <h3>SERCOP - Desarrollador Pasante (11/2024 - 02/2025)</h3>
             <p><strong>El Servicio Nacional de Contratación Pública (SERCOP)</strong> es la entidad que lidera la gestión transparente y eficiente de las compras públicas en Ecuador.</p>
+            <h4>Actividades</h4>
             <ul>
                 <li>Desarrollo de un sistema de búsqueda de términos en archivos PDF y .DOCX.</li>
-                <li>Implementación de un sistema de búsqueda con FastAPI, Elasticsearch, Angular y Angular Material.</li>
+                <li>Implementación de un sistema de búsqueda con FastAPI, Elasticsearch y Angular.</li>
                 <li>Automatización de limpieza de datos con Python para inteligencia de negocios.</li>
             </ul>
             <h4>Logros</h4>
@@ -62,7 +107,7 @@
             </ul>
         </div>
 
-        <div class="section">
+        <div class="section education">
             <h2>Educación</h2>
             <ul>
                 <li><strong>Universidad Politécnica Salesiana</strong> - Ingeniero en Ciencias de la Computación (03/2021 - 05/2025)</li>
@@ -79,10 +124,12 @@
             </ul>
         </div>
 
-        <div class="section">
+        <div class="section skills">
             <h2>Habilidades y Tecnologías</h2>
-            <p>Angular (Intermedio), CI/CD (Básico), Docker (Intermedio), Git (Intermedio), GitLab (Intermedio), JavaScript (Intermedio), NodeJs (Intermedio), MongoDB (Básico), PostgreSQL (Básico), NestJS (Intermedio), SQL (Intermedio), Tailwind CSS (Básico).</p>
-            <p>Experiencia en Microservicios, API RESTful, XP, SCRUM, Principios SOLID.</p>
+            <p><strong>Lenguajes y Frameworks:</strong> Angular (Intermedio), JavaScript (Intermedio), NodeJs (Intermedio), NestJS (Intermedio), Python (Intermedio).</p>
+            <p><strong>Bases de Datos:</strong> PostgreSQL (Básico), MongoDB (Básico), SQL (Intermedio).</p>
+            <p><strong>Herramientas:</strong> CI/CD (Básico), Docker (Intermedio), Git (Intermedio), GitLab (Intermedio).</p>
+            <p><strong>Metodologías:</strong> Microservicios, API RESTful, XP, SCRUM, Principios SOLID.</p>
         </div>
 
         <div class="section">
